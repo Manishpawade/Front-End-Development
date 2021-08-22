@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.section1{
+    height: 100vh;
+    width: 100%;
+}
+.head{
+    display: flex;
+   
+}
+.head .logo{
+    margin-left: 550px;
+}
+.head .logo img{
+    height: 100px;
+    width: 100px;
+}
+.head .logoname p{
+    margin-top: 40px;
+    font-size: 20px;
+    color: #2C2986;
+}
+.head .logoname h1 {
+    color: rgb(37, 36, 36);
+    font-size: 20px;
+    margin-left: 20px;
+}
+input[type=text],[type=number]{
+    width: 20%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 2s;
+}
+input[type=text]:focus{
+    border-color: dodgerblue;
+    box-shadow: 2px 0 10px 0 dodgerblue;
+}
+input[type=number]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 10px 0 dodgerblue;
+}
+.semname .p{
+    color: rgb(37, 36, 36);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.studentinfo{
+    margin-left: 40px;
+}
+.candid{
+    display: flex;
+}
+.candidateinfo{
+    margin-left: 20px;
+    width: 10%;
+    height: 80px;
+}
+.candidata{
+    width: 80%;
+    height: 80px;
+}
+.submit{
+    margin-left: 200px;
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(226, 143, 19);
+    
+}
+.submit:hover{
+    background-color: transparent;
+    transition: 1s;
+}
+.sub{
+    margin-left: 118px;
+    
+}
+.inp{
+   border-style:groove;
+    margin-left: 10px;
+}
+.inprn{
+    border-style: groove;
+    margin-left: 57px;
+}
+.inproll{
+    margin-left: 94px;
+}
+.section2{
+    border: 1px solid #111;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.s1{margin-left: 45px;
+}
+.s2{
+    margin-left: 26px;
+}
+.s3{
+    margin-left: 54px;
+}
+.s4{
+   font-weight:100 ;
+}
+.maths1{
+    margin-left: 15px;
+}
+.phy{
+    margin-left: 20px;
+}
+.eng{
+    margin-left: 48px;
+}
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    border-spacing: 0;
+    
+}
+th{
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}
+.maxmark{
+    margin-left: 30px;
+}
+.result{
+    margin-left: 30px;
+}
+.sgpa{
+    margin-left: 30px;
+}
+.result{
+    text-align: center;
+}
+.d1{
+    display: flex;
+    height: 50px;
+   
+    margin-left: 300px;
+  
+}
+
+.ada{
+    display: flex;
+}
+
+ 
+@media (max-width: 768px){
+    .head .logo {
+        margin-left: 16px;
+    }
+}

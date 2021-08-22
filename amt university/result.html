@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="result.css">
+    <title>SGBAU-Result</title>
+</head>
+
+<body>
+    <section class="section1">
+        <div class="head">
+            <div class="logo">
+                <img src="amt.logo.png" alt="">
+
+            </div>
+            <div class="logoname">
+                <p>Sant Gadge Baba Amravati University</p>
+                <br>
+                <h1>Results - SUMMER 2020</h1>
+            </div>
+        </div><br>
+
+        <div class="studentinfo">
+            Name of the Candidate :<input class="inp" placeholder="Enter your Full Name" type="text" id="fullName">
+            <br>
+            Enrolment No :<input class="inprn" placeholder="Enter PRN No" type="number" id="prnNo">
+            <br>
+            Roll No : <input class="inproll" placeholder="Enter your Roll no" type="number" id="rollNo">
+        </div>
+        <br><br>
+
+        <div class="sub">
+            Maths-1 : <input class="maths1" type="number" placeholder="Enter Maths-1 marks" id="m1">
+            <br>
+            Physics : <input class="phy" type="number" placeholder="Enter Physics marks" id="physics">
+            <br>
+            Mechanics : <input class="mech" type="number" placeholder="Enter Mechanics marks" id="mechanics">
+            <br>
+            ED : <input class="eng" type="number" placeholder="Enter ED marks" id="ed">
+        </div>
+        <button class="submit" onclick="submithandle()"> Submit</button>
+
+    </section>
+
+<h3 style="background-color: grey; color: white; padding-left: 20px;">Result Details</h3>
+<br>
+    <section class="section2">
+        <div class="head">
+            <div class="logo">
+                <img src="amt.logo.png" alt="">
+
+            </div>
+            <div class="logoname">
+                <p>Sant Gadge Baba Amravati University</p>
+                <br>
+                <h1>Results - SUMMER 2020</h1>
+            </div>
+        </div>
+        <div class="semname">
+            <p class="p">Four Year B.E. Semester : First Electrical Engg(Electronics and Power)(CGS)</p><br>
+        </div>
+
+        <div class="candid">
+            <div class="candidateinfo">
+                <h2>Name <span class="s1">: </span></h2>
+                <h2>Roll No <span class="s2">:</span></h2>
+                <h2>PRN <span class="s3">:</span></h2>
+            </div>
+            <div class="candidata">
+                <h2 id="p5"></h2>
+                <h2 id="p7"></h2>
+                <h2 id="p6"></h2>
+
+            </div>
+        </div>
+        <h2 style="margin-left: 20px;">Collage & : <span class="s4"> [0]817-P.R. Pote (Patil)Education & Welfare Trust's
+                Group of Institutions Collage of Engineering and Management , Amravati</span></h2>
+        <h2 style="margin-left: 20px;">Code</h2>
+
+        <table border="1px" class="table">
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade Point</th>
+                <th>Grade</th>
+                <th>Remarks</th>
+            </tr>
+            <tr>
+                <td>Maths-1</td>
+                <td>
+                    <p id="p1"></p>
+                </td>
+                <td>9.5</td>
+                <td id="grad"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>
+                    <p id="p2"></p>
+                </td>
+                <td>8.5</td>
+                <td>AB</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Mechanics</td>
+                <td>
+                    <p id="p3"></p>
+                </td>
+                <td>7.5</td>
+                <td>BA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ED</td>
+                <td>
+                    <p id="p4"></p>
+                </td>
+                <td>9</td>
+                <td>AA</td>
+                <td></td>
+            </tr>
+        </table>
+        <br>
+
+        <div  class="ada">
+            <div>
+            <h1 style="margin-left: 350px;">Max-Marks : <span id="p8"></span></h1>
+        </div>
+        <div>
+            <h1 style="margin-left: 150px;"> Percentage :<span id="p9"></span></h1>
+        </div>
+        <div>
+            <h1 style="margin-left: 150px;">Result : <span id="">Pass</span></h1>
+            </div>
+        </div>
+        <br>
+        <div>
+            <h3>Date of Declaration : <span id="time"></span></h3>
+            <h4 style="margin-left: 150px;"> @ = Passed by incentive marks vid ordinance no. 1 of 1985 </h4>
+            <h4 style="margin-left: 150px"> * = Passed by Grace marks vid ordinance no. 18 of 2001 </h4>
+            <h4 style="margin-left: 150px"> ** = Passed by conditional marks vid ordinance no. 18 of 2001</h4>
+            <h4 style="margin-left: 150px"> * Sant Gadge Baba Amravati University, is not responsible for any error that
+                may have incepeded due to internet errors and bugs in the result being published on net.</h4>
+            <h4 style="margin-left: 150px;"><span style="color: red;">"The Result/Marks statements published on net are
+                    for immediate information to the students"</span>Original marksheets are being issued by the
+                university via respective collages and only these marks statements is considered as <span
+                    style="color: red;">Authentic for any purpose</span></h4>
+        </div>
+        <br>
+    </section>
+    <br>
+
+
+
+
+    <script>
+        function submithandle() {
+            var fullName = document.getElementById("fullName").value;
+            document.getElementById("p5").innerHTML = fullName;
+
+            var prnNo = document.getElementById("prnNo").value;
+            document.getElementById("p6").innerHTML = prnNo;
+
+            var rollNo = document.getElementById("rollNo").value;
+            document.getElementById("p7").innerHTML = rollNo;
+
+
+            var m1 = document.getElementById("m1").value;
+            document.getElementById("p1").innerHTML = m1;
+
+            var physics = document.getElementById("physics").value;
+            document.getElementById("p2").innerHTML = physics;
+
+            var mechanics = document.getElementById("mechanics").value;
+            document.getElementById("p3").innerHTML = mechanics;
+
+            var ed = document.getElementById("ed").value;
+            document.getElementById("p4").innerHTML = ed;
+
+            total = parseInt(m1) + parseInt(physics) + parseInt(mechanics) + parseInt(ed);
+            console.log(total);
+            document.getElementById("p8").innerHTML = total;
+
+            per = total / 400 * 100;
+            console.log(per);
+            document.getElementById("p9").innerHTML = per;
+       
+      
+          
+
+            
+        }
+            let today = new Date();
+
+      var todaydate =today.getDate();
+      console.log(todaydate)
+      var month=today.getMonth();
+      month=month+1;
+      var year =today.getFullYear();
+      document.getElementById("time").textContent = todaydate+"/"+month+"/"+year;
+
+
+
+
+
+
+
+        // document.getElementById(Maths1).innerHTML =("Marks for Maths-1:"+Maths1);
+        // document.getElementById(Physics).innerHTML =("Marks for Physics:"+Physics);
+        // document.getElementById(ED).innerHTML =("Marks for ED:"+ED);
+        // document.getElementById(Mechanics).innerHTML =("Marks for Mechanics:"+Mechanics);
+
+    </script>
+</body>
+
+</html>
